@@ -1,13 +1,13 @@
 """Plaka tespiti modeli eğitimi.
 
 Veri seti : keremberke/license-plate-object-detection (HuggingFace, Roboflow kaynaklı, COCO formatı)
-Başlangıç : yolo11s.pt (COCO ön eğitimli)
-Çıktı     : runs/plate/yolo11s_plate/weights/best.pt  ->  models/plate_yolo11s.pt
+Başlangıç : yolo11m.pt (COCO ön eğitimli)
+Çıktı     : runs/plate/yolo11m_plate/weights/best.pt  ->  models/plate_yolo11m.pt
 
 Kullanım (proje kökünden):
     pip install huggingface_hub
     python scripts/train_plate.py                 # varsayılan ayarlar
-    python scripts/train_plate.py --model yolo11m.pt --epochs 50 --batch 12
+    python scripts/train_plate.py --epochs 50 --batch 8
 """
 import argparse
 import json
@@ -93,7 +93,7 @@ def coco_to_yolo(raw: Path):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--model", default="yolo11s.pt")
+    p.add_argument("--model", default="yolo11m.pt")
     p.add_argument("--epochs", type=int, default=40)
     p.add_argument("--imgsz", type=int, default=640)
     p.add_argument("--batch", type=int, default=16)

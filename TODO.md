@@ -1,13 +1,13 @@
 # Yapılacaklar
 
 ## Hazırlık
-- [ ] Videoları açıp incelemek (süre, çözünürlük, kamera açısı)
-- [ ] Geliştirme ortamını kurmak
-- [ ] Plaka tespiti modelinin eğitimini başlatmak
+- [x] Videoları açıp incelemek (süre, çözünürlük, kamera açısı)
+- [x] Geliştirme ortamını kurmak
+- [x] Plaka tespiti modelinin eğitimini başlatmak
 - [x] Proje klasör yapısını oluşturmak
 
 ## Aşama 1 – Kafe: Kişi Sayımı ve Cinsiyet Sınıflandırma
-- [ ] İnsan tespiti
+- [x] İnsan tespiti
 - [ ] Kişi takibi (her kişiye ayrı kimlik numarası)
 - [ ] Sayım çizgisinin belirlenmesi
 - [ ] Çizgiden geçen kişilerin sayımı (giriş / çıkış ayrı)
