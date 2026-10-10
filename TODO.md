@@ -19,21 +19,21 @@
 - [x] Sonuç videosunun kaydedilmesi
 
 ## Aşama 2 – Şehir Girişi: Araç Sayımı ve Plaka Tespiti
-- [ ] Araç tespiti
-- [ ] Araç türü sınıflandırma
-- [ ] Araç takibi (her araca ayrı kimlik numarası)
-- [ ] Şehir giriş çizgisinin belirlenmesi
-- [ ] Çizgiden geçen araçların sayımı
-- [ ] Plaka bölgesinin tespiti
-- [ ] Plaka görüntüsünün kırpılması
-- [ ] Plaka metninin okunması
-- [ ] Türkiye plaka formatına göre doğrulama ve düzeltme
-- [ ] Araç başına en güvenilir plaka okumasının seçilmesi
-- [ ] Aynı plakanın tekrar geçiş kontrolü
-- [ ] Güven skorlarının gösterilmesi (araç ve plaka)
-- [ ] Video üzerine kutu, sayaç ve plaka metni çizimi
-- [ ] Geçiş kayıtlarının dışa aktarılması
-- [ ] Araç ve plaka görsellerinin kaydedilmesi
+- [x] Araç tespiti
+- [x] Araç türü sınıflandırma
+- [x] Araç takibi (her araca ayrı kimlik numarası)
+- [x] Şehir giriş çizgisinin belirlenmesi
+- [x] Çizgiden geçen araçların sayımı
+- [x] Plaka bölgesinin tespiti
+- [x] Plaka görüntüsünün kırpılması
+- [x] Plaka metninin okunması
+- [x] Türkiye plaka formatına göre doğrulama ve düzeltme
+- [x] Araç başına en güvenilir plaka okumasının seçilmesi
+- [x] Aynı plakanın tekrar geçiş kontrolü
+- [x] Güven skorlarının gösterilmesi (araç ve plaka)
+- [x] Video üzerine kutu, sayaç ve plaka metni çizimi
+- [x] Geçiş kayıtlarının dışa aktarılması
+- [x] Araç ve plaka görsellerinin kaydedilmesi
 - [ ] Sonuç videosunun kaydedilmesi
 
 ## Ortak / Bonus
@@ -43,8 +43,8 @@
 
 ## Teslim
 - [ ] Kod temizliği ve çalıştırma talimatları
-- [ ] README / teknik özet
-- [ ] Kullanılan model ve kütüphanelerin açıklaması
-- [ ] Cinsiyet tahmininin kesin olmadığını belirten not
-- [ ] Bilinen hatalar, kısıtlar ve geliştirme önerileri
+- [x] README / teknik özet
+- [x] Kullanılan model ve kütüphanelerin açıklaması
+- [x] Cinsiyet tahmininin kesin olmadığını belirten not
+- [x] Bilinen hatalar, kısıtlar ve geliştirme önerileri
 - [ ] Teslim paketinin Drive'a yüklenmesi (18.00'den önce)

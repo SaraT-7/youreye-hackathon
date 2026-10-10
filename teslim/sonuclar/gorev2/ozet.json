@@ -1,0 +1,29 @@
+{
+  "frames": 9184,
+  "avg_fps_pipeline": 17.7,
+  "det_ms": 30.4,
+  "plate_ms_per_frame": 16.5,
+  "ocr_ms_per_frame": 4.0,
+  "entered": 313,
+  "exited": 0,
+  "total_vehicle_ids": 512,
+  "entered_by_type": {
+    "Otomobil": 278,
+    "Kamyon": 29,
+    "Motosiklet": 4,
+    "Otobus": 2
+  },
+  "entered_with_plate": 307,
+  "entered_with_valid_plate": 251,
+  "repeat_passes": 0,
+  "plate_format": "pl",
+  "ocr": "fast-plate-ocr",
+  "line": [
+    60.0,
+    840.0,
+    1110.0,
+    840.0
+  ],
+  "events_csv": "outputs\\task2\\task2_yolo11l_960_pl_auto_events.csv",
+  "output": "outputs\\task2\\task2_yolo11l_960_pl_auto.mp4"
+}

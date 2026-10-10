@@ -21,7 +21,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 
-from src.common.draw import draw_box, draw_count_line, draw_panel, draw_trail, id_color
+from src.common.draw import draw_box, draw_card, draw_count_line, draw_panel, draw_trail, id_color
 from src.common.line_counter import LineCounter
 from src.common.fps import FPSMeter
 from src.common.scene_cut import SceneCutDetector
@@ -32,7 +32,8 @@ from src.task1_cafe.tracker import PersonTracker
 
 def parse_args():
     p = argparse.ArgumentParser(description="Aşama 1 — kişi tespiti + takip")
-    p.add_argument("--video", default="data/task1_cafe.mp4")
+    p.add_argument("--video", default="data/task1_cafe_h264.mp4",
+                   help="Orijinal MPEG-4 dosyasında bozuk bloklar var; H.264 kopyası: ffmpeg -i data/task1_cafe.mp4 -c:v libx264 -crf 18 -an data/task1_cafe_h264.mp4")
     p.add_argument("--out", default=None)
     p.add_argument("--model", default="yolo11l.pt")
     p.add_argument("--imgsz", type=int, default=1280)
@@ -166,18 +167,15 @@ def main():
                     g_txt = f" | {lab} {gconf:.2f}" if lab != "?" else " | ?"
                 draw_box(frame, box, f"#{gid} {c:.2f}{g_txt}{tag_txt}", color=col)
                 cv2.circle(frame, tuple(map(int, foot)), 4, col, -1)
-            lines = [f"Giren: {counter.n_in}   Cikan: {counter.n_out}", f"Karede kisi: {len(t)}"]
+            rows_card = [("Cikan", counter.n_out), ("Karede kisi", len(t))]
             if gender is not None:
                 labs = [voter.result(int(g))[0] for g in t.ids]
-                lines.append(f"  Erkek {labs.count('E')} / Kadin {labs.count('K')} / ? {labs.count('?')}")
                 ent = [voter.result(e.track_id)[0] for e in counter.events if e.direction == "in"]
-                lines.append(f"Girenler: E {ent.count('E')} / K {ent.count('K')} / ? {ent.count('?')}")
-            lines += [f"Klip: {tracker.segment + 1}",
-                      f"FPS: {fps_total.fps:5.1f}  (tespit {fps_model.avg_ms:4.1f} ms"
-                      + (f", cinsiyet {fps_gender.total_time * 1000 / max(fps_total.count, 1):4.1f} ms)" if gender else ")")]
-            if gender is not None:
-                lines.append("Cinsiyet: model tahmini, kesin degildir")
-            draw_panel(frame, lines)
+                rows_card += [("Karede  E / K / ?", f"{labs.count('E')} / {labs.count('K')} / {labs.count('?')}"),
+                              ("Girenler E / K / ?", f"{ent.count('E')} / {ent.count('K')} / {ent.count('?')}")]
+            rows_card += [("Klip", tracker.segment + 1), ("FPS", f"{fps_total.fps:.1f}")]
+            draw_card(frame, frame.shape[1] - 345, 15, 330, "KAFEYE GIREN", big=counter.n_in, rows=rows_card,
+                      footer="Cinsiyet: model tahmini, kesin degildir" if gender is not None else None)
             fps_total.stop()
 
             writer.write(frame)

@@ -9,3 +9,4 @@ huggingface_hub
 easyocr
 open_clip_torch
 pandas
+fast-plate-ocr[onnx]

@@ -1,0 +1,13 @@
+# BoT-SORT + ReID — trafik videosu (30 FPS, sabit kamera)
+tracker_type: botsort
+track_high_thresh: 0.4
+track_low_thresh: 0.1
+new_track_thresh: 0.5
+track_buffer: 60          # 2 sn
+match_thresh: 0.8
+fuse_score: True
+gmc_method: none          # kamera sabit
+proximity_thresh: 0.5
+appearance_thresh: 0.8
+with_reid: True
+model: auto

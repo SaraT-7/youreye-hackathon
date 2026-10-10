@@ -1,0 +1,47 @@
+{
+  "tracker": "configs/botsort_cafe.yaml",
+  "model": "yolo11l.pt",
+  "imgsz": 1280,
+  "det_conf": 0.1,
+  "frames": 2159,
+  "avg_fps_pipeline": 14.1,
+  "avg_model_ms": 59.2,
+  "scene_cuts": [
+    216,
+    552,
+    815,
+    1051,
+    1424,
+    1834
+  ],
+  "clips": 7,
+  "tracks_per_frame_avg": 7.53,
+  "total_ids": 63,
+  "track_len_median_frames": 247,
+  "short_tracks(<1s)": 3,
+  "short_track_share": 0.048,
+  "nested_boxes_suppressed": 2102,
+  "line": [
+    790.0,
+    230.0,
+    1070.0,
+    230.0
+  ],
+  "band_px": 15.0,
+  "entered": 6,
+  "exited": 4,
+  "events_csv": "outputs\\task1\\step4_botsort_yolo11l_1280_events.csv",
+  "output": "outputs\\task1\\step4_botsort_yolo11l_1280.mp4",
+  "gender_ms_per_frame": 5.8,
+  "gender_tracks": {
+    "E": 37,
+    "K": 22,
+    "?": 4
+  },
+  "gender_entered": {
+    "E": 4,
+    "K": 1,
+    "?": 1
+  },
+  "gender_note": "Görsel model tahminidir; kesin değildir, hata payı içerir."
+}
