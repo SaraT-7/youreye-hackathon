@@ -12,11 +12,11 @@
 - [x] Sayım çizgisinin belirlenmesi
 - [x] Çizgiden geçen kişilerin sayımı (giriş / çıkış ayrı)
 - [x] Aynı kişinin tekrar sayılmasının engellenmesi
-- [ ] Cinsiyet sınıflandırma
-- [ ] Cinsiyet tahmininin kişi bazında sabitlenmesi
-- [ ] Güven skorlarının gösterilmesi
-- [ ] Video üzerine kutu, kimlik, cinsiyet ve sayaç çizimi
-- [ ] Sonuç videosunun kaydedilmesi
+- [x] Cinsiyet sınıflandırma
+- [x] Cinsiyet tahmininin kişi bazında sabitlenmesi
+- [x] Güven skorlarının gösterilmesi
+- [x] Video üzerine kutu, kimlik, cinsiyet ve sayaç çizimi
+- [x] Sonuç videosunun kaydedilmesi
 
 ## Aşama 2 – Şehir Girişi: Araç Sayımı ve Plaka Tespiti
 - [ ] Araç tespiti
@@ -37,7 +37,7 @@
 - [ ] Sonuç videosunun kaydedilmesi
 
 ## Ortak / Bonus
-- [ ] Anlık FPS / performans göstergesi
+- [x] Anlık FPS / performans göstergesi
 - [ ] Basit sonuç paneli
 - [ ] Sonuçlardan ekran görüntüleri alınması
 

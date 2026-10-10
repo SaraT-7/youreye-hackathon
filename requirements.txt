@@ -7,4 +7,5 @@ numpy==2.2.6
 lap
 huggingface_hub
 easyocr
+open_clip_torch
 pandas
