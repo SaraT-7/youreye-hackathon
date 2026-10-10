@@ -1,0 +1,37 @@
+# Görev verileri (paylaşım kısıtı + boyut) — repoya girmez
+*.zip
+*.mp4
+*.avi
+*.mov
+*.mkv
+data/*
+!data/.gitkeep
+
+# Model ağırlıkları
+*.pt
+*.pth
+*.onnx
+*.engine
+models/*
+!models/.gitkeep
+
+# Çıktılar (sonuç videoları teslim paketine ayrıca eklenecek)
+outputs/**/*
+!outputs/**/
+!outputs/**/.gitkeep
+runs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.env
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
