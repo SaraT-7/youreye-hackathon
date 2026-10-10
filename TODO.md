@@ -8,10 +8,10 @@
 
 ## Aşama 1 – Kafe: Kişi Sayımı ve Cinsiyet Sınıflandırma
 - [x] İnsan tespiti
-- [ ] Kişi takibi (her kişiye ayrı kimlik numarası)
-- [ ] Sayım çizgisinin belirlenmesi
-- [ ] Çizgiden geçen kişilerin sayımı (giriş / çıkış ayrı)
-- [ ] Aynı kişinin tekrar sayılmasının engellenmesi
+- [x] Kişi takibi (her kişiye ayrı kimlik numarası)
+- [x] Sayım çizgisinin belirlenmesi
+- [x] Çizgiden geçen kişilerin sayımı (giriş / çıkış ayrı)
+- [x] Aynı kişinin tekrar sayılmasının engellenmesi
 - [ ] Cinsiyet sınıflandırma
 - [ ] Cinsiyet tahmininin kişi bazında sabitlenmesi
 - [ ] Güven skorlarının gösterilmesi

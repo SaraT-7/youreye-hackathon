@@ -1,0 +1,13 @@
+# BoT-SORT + ReID — karşılaştırma için. Kamera sabit olduğundan kamera hareketi telafisi (GMC) kapalı.
+tracker_type: botsort
+track_high_thresh: 0.35
+track_low_thresh: 0.1
+new_track_thresh: 0.5
+track_buffer: 125
+match_thresh: 0.85
+fuse_score: True
+gmc_method: none          # sabit kamera -> gereksiz ve yavaş
+proximity_thresh: 0.5     # ReID ile eşleştirme için gereken asgari IoU
+appearance_thresh: 0.8    # görünüm benzerliği eşiği
+with_reid: True           # görünüm (kıyafet vb.) özellikleriyle kimlik koruma
+model: auto               # ReID özelliklerini tespit modelinin kendisinden al (ek ağırlık gerekmez)

@@ -1,0 +1,8 @@
+# ByteTrack — kafe sahnesi için ayarlı (Ultralytics tracker formatı)
+tracker_type: bytetrack
+track_high_thresh: 0.35   # 1. eşleştirme turu: bu güvenin üstündeki tespitler (= ekranda gösterdiğimiz eşik)
+track_low_thresh: 0.1     # 2. tur: 0.1–0.35 arası tespitler sadece MEVCUT izleri sürdürmek için kullanılır
+new_track_thresh: 0.5     # yeni kimlik açmak için gereken güven (yanlış tespitten kimlik doğmasın)
+track_buffer: 125         # kaybolan iz kaç kare bekletilir (25 FPS -> 5 sn); önünden biri geçen oturan kişi kimliğini korur
+match_thresh: 0.85        # eşleştirme maliyet eşiği (1 - IoU); yüksek = kutu şekli değişse de eşleştirir
+fuse_score: True          # eşleştirmede IoU ile tespit güvenini birleştir
