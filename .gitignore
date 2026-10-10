@@ -35,3 +35,6 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+
+# İndirilen eğitim veri setleri
+datasets/

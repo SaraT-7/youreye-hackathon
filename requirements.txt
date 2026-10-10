@@ -1,1 +1,10 @@
-# Bağımlılıklar geliştirme ilerledikçe eklenecek
+# Python 3.10 — test edilen ortam: Windows, RTX 4050 Laptop (6 GB), CUDA 12.1
+# PyTorch'u GPU sürümüyle ayrıca kurun:
+#   pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
+ultralytics==8.4.78
+opencv-python==4.13.0.92
+numpy==2.2.6
+lap
+huggingface_hub
+easyocr
+pandas
