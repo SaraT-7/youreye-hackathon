@@ -1,4 +1,4 @@
-# Arabica × YourEye Hackathon — Görüntü İşleme Çözümü
+# YourEye Hackathon — Görüntü İşleme Çözümü
 
 Kayseri, 10.10.2026 · Bireysel katılım
 
